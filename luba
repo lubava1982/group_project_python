@@ -1,0 +1,9 @@
+
+
+def who_is_brendan():
+    session_attributes = {}
+    card_title = "Brendan"
+    speech_output = "Brendan is the Coding Dojo Sensei"
+    reprompt_text = speech_output
+    should_end_session = True
+    return build_response(session_attributes, build_speechlet_response(card_title,speech_output,reprompt_text,should_end_session))
